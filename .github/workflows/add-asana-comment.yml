@@ -11,7 +11,7 @@ jobs:
         uses: Asana/comment-on-task-github-action@v1.2
         id: createComment
         with:
-          asana-secret: ${{ secrets.5B7IODI7YILCQY2PRYWQQNCSCYYXY4D4QXTH5KJYTOVRRQOINARCJBNW }}
+          asana-secret: ${{ secrets.ASANA_SECRET_01 }}
           comment-text: "https://github.com/JohanaS/Example-poem/pulls"
       - name: Get status
         run: echo "Status is ${{ steps.createComment.outputs.status }}"
